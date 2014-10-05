@@ -1,4 +1,4 @@
-checkBo lightweight jQuery plugin
+checkBo lightweight jQuery plugin v0.1.1
 =======
 
 Custom Checkbox and Radio, lightweight jQuery Plugin
@@ -14,6 +14,8 @@ Demo and Documentation are available [here](http://elmahdim.com/checkbo/)
 * Check all checkboxes
 * Size options: Default, Small, Medium, Large
 * NO classes or custom attributes are required for states :checked.
+* Toggle Check all text **new**
+* Show, Hide and Toggle elements **new**
 * More options are Coming soon..
 
 ## LICENSE
@@ -41,5 +43,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-### History
-* v0.1. First release.
+### Changelog
+* v0.1.0 First release.
+* v0.1.1 Bug fix, improvements and new features:
+	* Bug fix: radio group
+	* Improvements: re-structure `src` folder versions and general improvements
+	* New features: Check all toggle text. Show, Hide and Toggle.
