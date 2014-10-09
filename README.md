@@ -1,4 +1,4 @@
-checkBo lightweight jQuery plugin v0.1.2
+checkBo lightweight jQuery plugin v0.1.3
 =======
 
 Custom Checkbox and Radio, lightweight jQuery Plugin
@@ -50,4 +50,4 @@ SOFTWARE.
 	* Improvements: re-structure `src` folder versions and general improvements
 	* New features: Check all toggle text. Show, Hide and Toggle.
 * v0.1.2 - BUg fix: fix radio buttons animation  in Safari
-* v0.1.3 - Improvements: Kill the bubbling on the click event, Radio group toggle
+* v0.1.3 - Improvements: Kill the bubbling on the click event ( link inside label ), Radio group toggle ( show hide ).
