@@ -50,3 +50,4 @@ SOFTWARE.
 	* Improvements: re-structure `src` folder versions and general improvements
 	* New features: Check all toggle text. Show, Hide and Toggle.
 * v0.1.2 - BUg fix: fix radio buttons animation  in Safari
+* v0.1.3 - Improvements: Kill the bubbling on the click event, Radio group toggle
