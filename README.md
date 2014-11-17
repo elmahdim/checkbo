@@ -1,4 +1,4 @@
-checkBo lightweight jQuery plugin v0.1.3
+checkBo lightweight jQuery plugin v0.1.4
 =======
 
 Custom Checkbox and Radio, lightweight jQuery Plugin
@@ -14,8 +14,9 @@ Demo and Documentation are available [here](http://elmahdim.com/checkbo/)
 * Check all checkboxes
 * Size options: Default, Small, Medium, Large
 * NO classes or custom attributes are required for states :checked.
-* Toggle Check all text **new**
-* Show, Hide and Toggle elements **new**
+* Toggle Check all text
+* Show, Hide and Toggle elements
+* Switcher **new**
 * More options are Coming soon..
 
 ## LICENSE
@@ -51,3 +52,4 @@ SOFTWARE.
 	* New features: Check all toggle text. Show, Hide and Toggle.
 * v0.1.2 - BUg fix: fix radio buttons animation  in Safari
 * v0.1.3 - Improvements: Kill the bubbling on the click event ( link inside label ), Radio group toggle ( show hide ).
+* v0.1.4 - New feature: Switcher
