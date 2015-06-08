@@ -11,7 +11,8 @@
             checkAllButton: null,
             checkAllTarget: null,
             checkAllTextDefault: null,
-            checkAllTextToggle: null
+            checkAllTextToggle: null,
+            onSelected:function () { }
         }, c);
         return this.each(function () {
             function g(a) {
@@ -19,7 +20,12 @@
             }
             function k() {
                 var a = b(this).is(":checked");
-                b(this).closest("label").toggleClass("checked", a)
+                b(this).closest("label").toggleClass("checked", a);
+
+                //Callback function on selection
+                if (typeof c.onSelected == 'function') {
+                    c.onSelected.call(this);
+                }
             }
             function l(a, b, c) {
                 a.parent(f).hasClass("checked") ? a.text(c) : a.text(b)
