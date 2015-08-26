@@ -165,7 +165,124 @@ Check all toggle markup
 
 ### Hide
 ```html
+<label class="cb-radio" data-hide="#SELECTOR">
+    <input type="radio" name="..." />
+    ...
+</label>
+<ANY id="SELECTOR">...</ANY>
+
+<label class="cb-checkbox" data-hide=".SELECTOR">
+    <input type="checkbox" name="..." />
+    ...
+</label>
+<ANY class="SELECTOR">...</ANY>
 ```
+
+### Toggle
+```html
+<label class="cb-checkbox" data-toggle="#SELECTOR1" data-hide=".SELECTOR2" data-show="#SELECTOR3">
+	<input type="checkbox" name="..." />
+	...
+</label>
+
+<ANY id="SELECTOR1">...</ANY>
+<ANY class="SELECTOR2">...</ANY>
+<ANY class="is-hidden" id="SELECTOR3">...</ANY>
+
+<label class="cb-checkbox" data-toggle="#X">
+	<input type="checkbox" name="..." />
+	...
+</label>
+<ANY class="is-hidden" id="X"></ANY>
+
+<label class="cb-checkbox" data-toggle="#XX">
+	<input type="checkbox" name="..." />
+	...
+</label>
+<ANY id="XX">...</ANY>
+```
+
+### Radio group toggle
+```html
+<label class="cb-radio" data-show=".ONE" data-hide=".TWO,.THREE">
+	<input type="radio" name="radio-group" checked="checked"/>
+	...
+</label>
+<label class="cb-radio" data-show=".TWO,.ONE"  data-hide=".THREE">
+	<input type="radio" name="radio-group"/>
+	...
+</label>
+<label class="cb-radio" data-show=".THREE" data-hide=".ONE">
+	<input type="radio" name="radio-group"/>
+	...
+</label>
+
+
+<ANY class="ONE">
+	...
+
+	<ANY class="TWO is-hidden">
+		...
+	</ANY>
+</ANY>
+
+<ANY class="THREE is-hidden">
+	...
+</ANY>
+```
+
+## Links
+```html
+<label class="cb-checkbox">
+    <input type="checkbox" />
+    ... <a href="">...</a>
+</label>
+```
+
+## Switcher
+
+### Switcher Group
+```html
+<div class="cb-switcher-group">
+ <span class="cb-state">OFF</span>
+ <div class="cb-switcher">
+  <label class="inner-switcher"><input type="checkbox"/></label>
+ </div>
+ <span class="cb-state">ON</span>
+</div>
+```
+
+### Switcher Off/Default State
+```html
+<div class="cb-switcher">
+ <label class="inner-switcher">
+  <input type="checkbox" data-state-on="ON" data-state-off="OFF"/>
+ </label>
+ <span class="cb-state">ON</span>
+</div>
+```
+### Switcher On/Checked State
+```html
+<div class="cb-switcher">
+ <label class="inner-switcher">
+  <input type="checkbox" checked data-state-on="ON" data-state-off="OFF"/>
+ </label>
+ <span class="cb-state">ON</span>
+</div>
+```
+
+### Switcher Toggle visibility
+```html
+<div class="cb-switcher" data-toggle=".switch-toggle">
+ <label class="inner-switcher">
+  <input type="checkbox" checked data-state-on="Yes" data-state-off="No"/>
+ </label>
+ <span class="cb-state">Yes</span>
+</div>
+
+<div class="switch-toggle"> ... </div>
+```
+
 
 ## LICENSE
 
