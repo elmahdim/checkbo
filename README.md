@@ -19,6 +19,9 @@ Demo and Documentation are available [here](http://elmahdim.com/checkbo/)
 * Switcher **new**
 * More options are Coming soon..
 
+## Getting Started
+
+
 ## LICENSE
 
 The MIT License (MIT)
