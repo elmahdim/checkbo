@@ -21,6 +21,151 @@ Demo and Documentation are available [here](http://elmahdim.com/checkbo/)
 
 ## Getting Started
 
+`git clone https://github.com/elmahdim/checkbo.git`
+
+### Usage: Include required files:
+
+1. `<link rel="stylesheet" href="PATH-TO/checkBo.css">`
+2. `<link rel="stylesheet" href="PATH-TO/checkBo.js">`
+
+### How to use:
+
+```javascript
+$('ANY').checkBo();
+```
+## Checkbox
+
+```html
+<!-- Default -->
+<label class="cb-checkbox">
+  <input type="checkbox" name="..." />
+  ...
+</label>
+
+<!-- Disabled -->
+<label class="cb-checkbox">
+  <input type="checkbox" disabled="disabled" name="..." />
+  ...
+</label>
+
+<!-- Checked -->
+<label class="cb-checkbox">
+  <input type="checkbox" checked="checked" name="..." />
+  ...
+</label>
+
+<!-- Checked Disabled -->
+<label class="cb-checkbox">
+  <input type="checkbox" checked="checked" disabled="disabled" name="..." />
+  ...
+</label>
+```
+
+## Radio
+
+```html
+<!-- Default -->
+<label class="cb-radio">
+  <input type="radio" name="..." />
+  ...
+</label>
+
+<!-- Disabled -->
+<label class="cb-radio">
+  <input type="radio" disabled="disabled" name="..." />
+  ...
+</label>
+
+<!-- Checked Disabled -->
+<label class="cb-radio">
+  <input type="radio" checked="checked" disabled="disabled" name="..." />
+  ...
+</label>
+```
+
+## Methods
+
+### States
+Change a specific checkbox or radio state.
+```javascript
+$("ANY").prop('checked', true).change();
+// OR
+$('ANY').prop('checked', true).trigger('change');
+```
+
+### Check all
+
+Check all method
+
+```javascript
+$('ANY').checkBo({
+    checkAllButton : 'SELECTOR',      // Default: null
+    checkAllTarget : 'SELECTOR',      // Default: null
+    checkAllTextDefault : 'Check All',    // Default: null, Type: String
+    checkAllTextToggle  : 'Un-check All'  // Default: null, Type: String
+});
+```
+
+Check all toggle markup
+```html
+<table>
+  <tr>
+    <th>
+      <label class="cb-checkbox m-0" id="checkAllButton-SELECTOR">
+        <input type="checkbox" name="check-all" />
+        <ANY class="toggle-text">Check All</ANY>
+      </label>
+    </th>
+  </tr>
+  <tr class="checkAllTarget-SELECTOR">
+    <td>
+      <label class="cb-checkbox">
+      <input type="checkbox"  name="..." />
+      ... </label>
+    </td>
+  </tr>
+</table>
+```
+
+## Sizes
+
+### Checkbox size options
+```html
+<label class="cb-checkbox">       <input type="checkbox" name="..." /> ... </label>
+<label class="cb-checkbox cb-sm"> <input type="checkbox" name="..." /> ... </label>
+<label class="cb-checkbox cb-md"> <input type="checkbox" name="..." /> ... </label>
+<label class="cb-checkbox cb-lg"> <input type="checkbox" name="..." /> ... </label>
+```
+
+### Radio size options
+```html
+<label class="cb-radio">       <input type="radio" name="..." /> ... </label>
+<label class="cb-radio cb-sm"> <input type="radio" name="..." /> ... </label>
+<label class="cb-radio cb-md"> <input type="radio" name="..." /> ... </label>
+<label class="cb-radio cb-lg"> <input type="radio" name="..." /> ... </label>
+```
+
+## Show, Hide and Toggle
+
+### Show
+
+```html
+<label class="cb-radio" data-show="#SELECTOR">  <!-- value as an id selector -->
+    <input type="radio" name="..." />
+    ...
+</label>
+<ANY class="is-hidden" id="SELECTOR">...</ANY>
+
+<label class="cb-checkbox" data-show=".SELECTOR"> <!-- value as an class selector -->
+    <input type="checkbox" name="..." />
+    ...
+</label>
+<ANY class="is-hidden SELECTOR">...</ANY>
+```
+
+### Hide
+```html
+```
 
 ## LICENSE
 
