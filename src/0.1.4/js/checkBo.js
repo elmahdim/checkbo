@@ -31,11 +31,31 @@
                 b(a).addClass("is-hidden")
             }
             var e = b(this),
-                f = e.find(".cb-checkbox"),
-                h = e.find(".cb-radio"),
+                f = e.find(".cb-checkbox").filter(function () {
+                    if ($(this).find('span').length > 0)
+                        return false;
+                    return true;
+                }),
+                h = e.find(".cb-radio").filter(function () {
+                    if ($(this).find('span').length > 0)
+                        return false;
+                    return true;
+                }),
                 n = e.find(".cb-switcher"),
-                p = f.find("input:checkbox"),
-                q = h.find("input:radio");
+                p = f.find("input:checkbox").filter(function () {
+                    var parent = $(this).parent().parent();
+
+                    if (parent.hasClass('cb-inner'))
+                        return false;
+                    return true;
+                }),
+                q = h.find("input:radio").filter(function () {
+                    var parent = $(this).parent().parent();
+
+                    if (parent.hasClass('cb-inner'))
+                        return false;
+                    return true;
+                });
             p.wrap('<span class="cb-inner"><i></i></span>');
             q.wrap('<span class="cb-inner"><i></i></span>');
             var r = new g("input:checkbox"),
