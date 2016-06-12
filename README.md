@@ -1,3 +1,5 @@
+> This repository is no longer maintained.
+
 checkBo lightweight jQuery plugin v0.1.4
 =======
 
